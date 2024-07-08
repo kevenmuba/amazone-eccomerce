@@ -1,15 +1,16 @@
 
 import './App.css';
 import CaraouselRender from './components/carousel/CarouselRender';
+import Category from './components/catagories/Category';
 import Header from './components/header/Header';
-import HeaderLower from './components/header/HeaderLower'
+import Routing from './Routing';
+
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <HeaderLower/>
-     <CaraouselRender/>
+     
+     <Routing/>
     </div>
   );
 }
