@@ -2,6 +2,7 @@ import React from 'react'
 import LayOut from '../../components/Layout/LayOut'
 import CaraouselRender from '../../components/carousel/CarouselRender'
 import Category from '../../components/catagories/Category'
+import Product from '../../components/Product/Product'
 
 
 function Landing() {
@@ -9,6 +10,7 @@ function Landing() {
     <LayOut>
       <CaraouselRender/>
       <Category/>
+      <Product/>
     </LayOut>
   )
 }
