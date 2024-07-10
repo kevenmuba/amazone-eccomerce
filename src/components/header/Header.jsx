@@ -6,8 +6,6 @@ import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
 import HeaderLower from './HeaderLower'
 import { DataContext } from "../DataProvider/DataProvider";
-
-//import { DataContext } from "../DataProvider/DataProvider";
 //import { auth } from "../../Utility/firebase";
 
 const Header = () => {
