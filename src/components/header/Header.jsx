@@ -1,21 +1,24 @@
-//import React, { useContext } from "react";
+import React, { useContext } from "react";
 import classes from "./header.module.css";
 import { Link } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
 import HeaderLower from './HeaderLower'
+import { DataContext } from "../DataProvider/DataProvider";
 
 //import { DataContext } from "../DataProvider/DataProvider";
 //import { auth } from "../../Utility/firebase";
 
 const Header = () => {
-  /*
+  
   const [{ user, basket }, dispatch] = useContext(DataContext);
+  //console.log(basket.length);
+  
   const totalItem = basket?.reduce((amount, item) => {
     return item.amount + amount;
   }, 0);
-*/
+
   return (
     <section className={classes.fixed}>
       <section>
@@ -84,7 +87,7 @@ const Header = () => {
             </Link>
             <Link to="/cart" className={classes.cart}>
               <BiCart size={35} />
-              <span>0</span>
+              <span>{totalItem}</span>
             </Link>
           </div>
         </div>
