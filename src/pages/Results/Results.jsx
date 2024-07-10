@@ -51,4 +51,4 @@ function Results() {
 export default Results
 /**
  1,The useParams hook is really handy because it allows you to create dynamic, flexible URLs in your application. Instead of having a separate page for every single product, you can have one ProductDetails page that can display any product based on the ID in the URL.
- 2, useEffectachinn yemntekemew lk pagu load siyareg endiseraln yemnfelgew neger sinor new*/
+ 2, useEffectachinn yemntekemew lk pagu load siyareg endiseraln yemnfelgew neger sinor new and arraywan endatresa*/
