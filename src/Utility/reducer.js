@@ -49,6 +49,12 @@ export const reducer = (state, action) => {
       /*
       1,index yemtlewan yetetekemnew be id bemetekem yetedegagemewun product detect lemareg new 
       2,splice yetetekemnew degmo  */
+
+      case Type.SET_USER:
+      return {
+        ...state,
+        user: action.user,
+      };
   
     default:
       return state;

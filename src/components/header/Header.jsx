@@ -6,7 +6,8 @@ import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
 import HeaderLower from './HeaderLower'
 import { DataContext } from "../DataProvider/DataProvider";
-//import { auth } from "../../Utility/firebase";
+import { auth } from "../../Utility/firebase";
+
 
 const Header = () => {
   
@@ -59,24 +60,21 @@ const Header = () => {
                 <option value="">EN</option>
               </select>
             </Link>
-            <Link to='/'>
+            <Link to={!user && '/auth'}>
               <div>
                 
-                {/*user ? (
+                {user ? (
                   <>
                     <p>Hello {user?.email?.split("@")[0]}</p>
-                    <span onClick={() => (user ? auth.signOut() : null)}>
-                      Sign Out
-                    </span>
+                    <span onClick={() => auth.signOut()}>Sign Out</span>
                   </>
                 ) : (
                   <>
                     <p>Hello, Sign In</p>
                     <span>Account & Lists</span>
                   </>
-                )*/}
-                <p>Hello, Sign In</p>
-                <span>Account & Lists</span>
+                )}
+                
               </div>
             </Link>
             <Link to="/orders">
